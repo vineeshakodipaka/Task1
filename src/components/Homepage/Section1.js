@@ -3,10 +3,7 @@ import { Button, Col, div, Row } from "react-bootstrap";
 import imga from "../../Images/Group 171.png";
 const Section1 = () => {
   return (
-    <div
-      className="pt-4 section1cls"
-      style={{ background: "rgba(248, 241, 211, 0.25)" }}
-    >
+    <div className="pt-4 section1cls" style={{ background: "#F8F1D3" }}>
       <div className="section1cls">
         <Row className="justify-content-around  px-lg-5 mx-lg-3 px-md-4 pt-3 pb-3 pb-lg-5">
           <Col md={6} className="mt-md-5 pt-3 pt-md-5 ">

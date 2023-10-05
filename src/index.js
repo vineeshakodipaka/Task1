@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const root = createRoot(document.getElementById("app"));
 
 root.render(
-  <StrictMode>
+  <>
     <App />
-  </StrictMode>
+  </>
 );
