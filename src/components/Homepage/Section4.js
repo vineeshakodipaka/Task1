@@ -30,7 +30,7 @@ const Section4 = () => {
     },
   ]);
   return (
-    <div className="pt-2 section4cls mt-md-4 ">
+    <div className="pt-2 section4cls mt-md-4 px-lg-5 mx-lg-5">
       <div>
         {/* Get 20% off for student */}
         <Row className="section4clsrow1 justify-content-around mx-md-2 pt-md-5 pb-md-5 mb-md-5 px-lg-5 pb-4">
@@ -38,7 +38,7 @@ const Section4 = () => {
             md={10}
             lg={6}
             xs={5}
-            className="mt-5 pt-5 mx-lg-0 mx-md-5 mx-lg-0 px-lg-0 pb-3  px-md-3 lg:text-base md:text-2xl"
+            className="mt-5 pt-5 mx-lg-0 mx-md-5 mx-lg-0 px-lg-0 pb-3  px-md-3 lg:text-base md:text-xl"
           >
             <p className="fw-bold pb-3  ">Get 20% off for student</p>
             <h3 className="fw-bold pb-3  ">Student discounts available.</h3>

@@ -85,7 +85,7 @@ const Bookform = () => {
                 background: "white",
                 border: "none",
                 boxShadow:
-                  "0 4.424776077270508px 6.210212707519531px 0 rgba(0, 0, 0, 0.0283)",
+                  "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
               }}
             >
               <h5 className="mt-2 fs-3 fw-bold mb-3">Book Now</h5>
@@ -98,7 +98,7 @@ const Bookform = () => {
                   onSubmit={handleFormSubmit}
                 >
                   <Form.Group className="mb-4" as={Col} md={12}>
-                    <Form.Label className="formlabel " >CITY</Form.Label>
+                    <Form.Label className="formlabel ">CITY</Form.Label>
                     <InputGroup className="rounded-5">
                       <Form.Control
                         required

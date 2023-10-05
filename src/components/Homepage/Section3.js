@@ -122,6 +122,8 @@ const Section3 = () => {
                   key={index}
                   style={{
                     border: "none",
+                    boxShadow:
+                      "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
                   }}
                 >
                   <Card.Img variant="top" src={item.images} width="100%" />

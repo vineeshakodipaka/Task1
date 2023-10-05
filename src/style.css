@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&family=Roboto&display=swap');
 body{
-  /* background-image: url("./Images/Homepage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
+ background-color: #F5F5F5;
 }
 
  .App{
