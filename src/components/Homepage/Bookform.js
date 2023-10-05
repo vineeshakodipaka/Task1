@@ -80,19 +80,18 @@ const Bookform = () => {
           </Col>
           <Col md={8} xs={8} lg={6} className="mt-5  pt-lg-5 mx-lg-5 px-md-5">
             <Card
-              className="p-3 pt-4 pb-4 rounded-4 mx-lg-5 "
+              className="p-3 pt-4  rounded-4 mx-lg-5 "
               style={{
                 background: "white",
                 border: "none",
-                boxShadow:
-                  "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
+                boxShadow: " 0px 10px 20px 2px rgba(0, 0, 0, 0.25)",
               }}
             >
               <h5 className="mt-2 fs-3 fw-bold mb-3">Book Now</h5>
               <p className="mb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
-              <Row className="mb-4 ">
+              <Row className="mb-2">
                 <Form
                   className="mt-2 fw-bold bg-white "
                   onSubmit={handleFormSubmit}

@@ -59,14 +59,16 @@ const Section2 = () => {
             lg={4}
             xs={12}
             md={12}
-            className="section2clstexts mt-5 pt-md-4 pt-5  lg:text-base md:text-2xl md:leading-loose"
+            className="section2clstexts mt-5 pt-md-4 pt-5  lg:text-base md:text-2xl lg:leading-loose md:leading-loose"
           >
-            <h1 className="fw-bold">Tropical Adventure </h1>
-            <p>for Students.</p>
+            <h1 className="fw-bold  lg:text-3xl md:text-2xl">
+              Tropical Adventure{" "}
+            </h1>
+            <p className="lg:text-2xl md:text-2xl mt-2 mb-2">for Students.</p>
             <p className="fw-bold">
               Student Tropical Vacation: Relax and Recharge
             </p>
-            <ul>
+            <ul className="list-disc lg:mx-5">
               <li>Lorem ipsum dolor sit amet </li>
               <li> Massa quis natoque sit quam </li>
               <li> Eros non pellentesque elit </li>
