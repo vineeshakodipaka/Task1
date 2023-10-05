@@ -30,24 +30,23 @@ const Section2 = () => {
           <Col xs={12} lg={5} md={12}>
             {data.map((item, index) => (
               <Card
-                className="pt-3 pb-3 mb-3 p-md-2 rounded-4  lg:text-base md:text-2xl md:leading-loose"
+                className="pt-3 pb-3 mb-3 p-md-2 rounded-4  lg:text-base md:text-3xl md:leading-loose"
                 key={index}
                 style={{
                   border: "none",
-                  boxShadow:
-                    "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
+                  boxShadow: " 0px 10px 20px 2px rgba(0, 0, 0, 0.25)",
                 }}
               >
                 <Row className="pt-3 pb-3 ">
-                  <Col lg={3} xs={12} className="fs-5">
+                  <Col lg={3} md={4}>
                     <Card.Img
-                      className="px-3"
+                      className="px-3 pt-md-4 pt-md-2"
                       src={item.imgages}
-                      style={{ width: "100px" }}
+                      style={{ width: "150px" }}
                     />
                   </Col>
 
-                  <Col lg={6} xs={12}>
+                  <Col lg={6} md={8}>
                     <Card.Text className="fw-bold">{item.text}</Card.Text>
                     <Card.Text>{item.para}</Card.Text>
                   </Col>
@@ -59,23 +58,23 @@ const Section2 = () => {
             lg={4}
             xs={12}
             md={12}
-            className="section2clstexts mt-5 pt-md-4 pt-5  lg:text-base md:text-2xl lg:leading-loose md:leading-loose"
+            className="section2clstexts mt-5 pt-lg-1 pt-md-4 pt-5  lg:text-base md:text-3xl lg:leading-loose md:leading-loose"
           >
-            <h1 className="fw-bold  lg:text-3xl md:text-2xl">
-              Tropical Adventure{" "}
+            <h1 className="fw-bold  lg:text-3xl md:text-3xl">
+              Tropical Adventure
             </h1>
-            <p className="lg:text-2xl md:text-2xl mt-2 mb-2">for Students.</p>
+            <p className="lg:text-2xl md:text-3xl mt-2 mb-2">for Students.</p>
             <p className="fw-bold">
               Student Tropical Vacation: Relax and Recharge
             </p>
-            <ul className="list-disc lg:mx-5">
+            <ul className="list-disc lg:mx-5 md:mx-5">
               <li>Lorem ipsum dolor sit amet </li>
               <li> Massa quis natoque sit quam </li>
               <li> Eros non pellentesque elit </li>
               <li>tortor id euismod habitant</li>
             </ul>
             <Button
-              className="rounded-5 mt-2 px-4 pt-3 pb-3"
+              className="rounded-5 mt-2 px-4 mt-lg-4 md:text-base mt-md-4 pt-3 pb-3"
               style={{ background: "#F27A44", border: "none" }}
             >
               Explore More

@@ -11,6 +11,19 @@ body{
  .navbarcls .nav-link,.navbarcls .btn{
   font-family: 'Inter' !important;
  }
+ .navbarcls  .navbar-toggler,
+.navbarcls .navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+  background: none;
+}
+.navbarcls .navbar-toggler .navbar-collapse:focus {
+  border: none !important;
+  outline: none !important;
+ 
+}
+
+ 
  /* section1cls */
  /* Section1.css */
  .section1cls {

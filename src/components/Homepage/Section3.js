@@ -17,7 +17,7 @@ const Section3 = () => {
       id: 1,
       images: imgA,
       content1: "Harvard University",
-      content2: "Cambridge,Massachusetts,UK",
+      content2: "Cambridge,Massachusets,UK",
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ const Section3 = () => {
       id: 5,
       images: imgA,
       content1: "Harvard University",
-      content2: "Cambridge,Massachusetts,UK",
+      content2: "Cambridge,Massachusets,UK",
     },
     {
       id: 6,
@@ -108,22 +108,23 @@ const Section3 = () => {
   };
 
   return (
-    <div className="slide-container  pt-4 pb-4  lg:text-base md:text-2xl">
+    <div className="slide-container  pt-4 pb-4  lg:text-base md:text-3xl">
       <div>
         <Row className="pt-4 mx-md-5 mx-md-4 px-md-5">
-          <h4 className="pt-3 pb-4 m-3 fw-bold">Our Destinations</h4>
+          <h4 className="pt-3 pb-4 m-3 fw-bold lg:text-3xl md:text-5xl">
+            Our Destinations
+          </h4>
           {/* Slider component */}
 
           <Slider {...settings} ref={sliderRef}>
             {data.map((item, index) => (
               <Col>
                 <Card
-                  className="rounded-4 m-2 pb-3 position-relative"
+                  className="rounded-4 m-2 pb-4 position-relative"
                   key={index}
                   style={{
-                    border: "none",
-                    boxShadow:
-                      "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
+                    border: "",
+                    // boxShadow: " 0px 10px 20px 2px rgba(0, 0, 0, 0.25)",
                   }}
                 >
                   <Card.Img variant="top" src={item.images} width="100%" />
@@ -131,7 +132,7 @@ const Section3 = () => {
                     <Col
                       md={1}
                       lg={6}
-                      className="lg:text-base md:text-2xl lg:px-0 md:px-5"
+                      className="lg:text-base md:text-2xl lg:px-0 md:px-5 pb-4"
                     >
                       <Button
                         className="px-3  lg:px-1 pt-2 pb-2 rounded-pill md:mx-8 lg:mx-5 lg:text-base md:text-2xl"
@@ -160,12 +161,14 @@ const Section3 = () => {
                       </Button>
                     </Col>
                   </Row>
-                  <Card.Text className=" mt-4 fw-bold px-2   pb-2 pt-2">
+                  <Card.Text className="mt-4 fw-bold px-lg-2 px-md-4 pb-2 pt-2">
                     {item.content1}
                   </Card.Text>
                   <Row className="justify-content-between">
                     <Col xs={9}>
-                      <Card.Text className="px-2">{item.content2}</Card.Text>
+                      <Card.Text className="px-2 px-md-4 px-lg-2 pt-4 lg:text-base ">
+                        {item.content2}
+                      </Card.Text>
                     </Col>
                     <Col xs={3}>
                       <Card.Img src={menu} style={{ width: "40px" }} />
@@ -183,7 +186,7 @@ const Section3 = () => {
               className={`slide-btn   ${activeButton === 1 ? "active" : ""}`}
               onMouseEnter={() => setActiveButton(1)}
             >
-              <FiArrowLeft className="icon" />{" "}
+              <FiArrowLeft className="icon md:text-4xl" />{" "}
               {/* Add class "icon" to the icon */}
             </Button>
             <Button
@@ -192,7 +195,7 @@ const Section3 = () => {
               id="slide-btn"
               onClick={slideNext}
             >
-              <FiArrowRight className="icon" />{" "}
+              <FiArrowRight className="icon  md:text-4xl" />{" "}
               {/* Add class "icon" to the icon */}
             </Button>
           </div>

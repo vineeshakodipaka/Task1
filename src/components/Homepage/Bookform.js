@@ -58,16 +58,19 @@ const Bookform = () => {
   return (
     <div className="bookformcls">
       <div>
-        <Row className="px-lg-5 px-md-5 mx-lg-5 lg:text-base md:text-2xl justify-content-around mx-md-2 pb-4">
+        <Row
+          className="px-lg-5 mx-lg-5 md:ms-16  lg:text-base md:text-3xl md:leading-relaxed justify-content-between  pb-4
+         md:flex md:flex-col-reverse  lg:flex-row  "
+        >
           <Col
             md={8}
             lg={4}
-            className="bookformimgcol  position-relative"
+            className="mx-lg-1 md:ms-8  bookformimgcol  position-relative"
             xs={8}
           >
             <img
               src={imgz}
-              className="mt-5 mt-md-0 pt-lg-0 mt-lg-0"
+              className="mt-5  md:ms-16  mt-md-0 pt-lg-4 mt-lg-0"
               style={{ width: "100%" }}
               alt="Booking"
             />
@@ -78,9 +81,14 @@ const Bookform = () => {
               />
             </div>
           </Col>
-          <Col md={8} xs={8} lg={6} className="mt-5  pt-lg-5 mx-lg-5 px-md-5">
+          <Col
+            md={9}
+            xs={8}
+            lg={6}
+            className="mt-5  md:ms-8    pt-lg-5 mx-lg-5 px-md-2"
+          >
             <Card
-              className="p-3 pt-4  rounded-4 mx-lg-5 "
+              className="p-3 pt-4  md:ms-16   rounded-4 mx-lg-5 "
               style={{
                 background: "white",
                 border: "none",
@@ -103,7 +111,7 @@ const Bookform = () => {
                         required
                         onChange={handleInputChange}
                         name="City"
-                        className="labelholder px-4 pb-2"
+                        className="labelholder px-4 pb-2 lg:text-base md:text-3xl"
                         type="text"
                         placeholder="placeholder"
                       />
@@ -120,7 +128,7 @@ const Bookform = () => {
                         <Form.Control
                           name="Arrival"
                           onChange={handleInputChange}
-                          className="labelholder px-4 pb-2"
+                          className="labelholder px-4 pb-2 lg:text-base md:text-3xl"
                           required
                           type="text"
                           placeholder="10 October"
@@ -133,10 +141,10 @@ const Bookform = () => {
                         <Form.Control
                           onChange={handleInputChange}
                           name="Departure"
-                          className="labelholder px-4 pb-2"
+                          className="labelholder lg:text-base md:text-3xl px-4 pb-2"
                           required
                           type="text"
-                          placeholder="11 October"
+                          placeholder="11 Octobe "
                         />
                       </InputGroup>
                     </Form.Group>
@@ -149,7 +157,7 @@ const Bookform = () => {
                       <InputGroup className="mb-3">
                         <Button
                           required
-                          className="incbtn  fw-bold fs-4"
+                          className="incbtn  fw-bold lg:text-base md:text-3xl"
                           variant="outline-secondary"
                           onClick={handleIncrement}
                         >
@@ -160,12 +168,12 @@ const Bookform = () => {
                           type="text"
                           value={` ${formData.IncrementDecrementValue}`}
                           readOnly
-                          className="text-center"
+                          className="lg:text-base md:text-3xl"
                         />
                         <Button
                           required
                           variant="outline-secondary"
-                          className="decbtn fw-bold fs-4"
+                          className="decbtn fw-bold lg:text-base md:text-3xl"
                           onClick={handleDecrement}
                         >
                           -
@@ -176,7 +184,7 @@ const Bookform = () => {
                       <Form.Label className="formlabel">ROOM</Form.Label>
                       <InputGroup className="mb-3">
                         <Button
-                          className="incbtn  fw-bold fs-4"
+                          className="incbtn  fw-bold lg:text-base md:text-3xl"
                           variant="outline-secondary"
                           onClick={handleDecrement2}
                         >
@@ -186,11 +194,11 @@ const Bookform = () => {
                           type="text"
                           value={` ${formData.IncrementDecrementValue2}`}
                           readOnly
-                          className="text-center"
+                          className="lg:text-base md:text-3xl"
                         />
                         <Button
                           variant="outline-secondary"
-                          className="decbtn fw-bold fs-4"
+                          className="decbtn fw-bold lg:text-base md:text-3xl"
                           onClick={handleIncrement2}
                         >
                           +
