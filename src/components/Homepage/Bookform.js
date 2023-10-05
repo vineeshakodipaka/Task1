@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Card, Col, div, Form, InputGroup, Row } from "react-bootstrap";
 import "./Bookform.css";
 import imgz from "../../Images/Group 167.png";
-
+import imgy from "../../Images/Subtract (1).png";
 const Bookform = () => {
   const [formData, setFormData] = useState({
     City: "",
@@ -59,15 +59,26 @@ const Bookform = () => {
     <div className="bookformcls">
       <div>
         <Row className="px-lg-5 px-md-5 mx-lg-5 justify-content-around mx-md-2 pb-4">
-          <Col md={5} lg={4} className="" xs={8}>
+          <Col
+            md={8}
+            lg={4}
+            className="bookformimgcol  position-relative"
+            xs={8}
+          >
             <img
               src={imgz}
-              className="mt-5 mt-md-0 pt-lg-0 mt-lg-0 "
+              className="mt-5 mt-md-0 pt-lg-0 mt-lg-0"
               style={{ width: "100%" }}
               alt="Booking"
             />
+            <div className="ms-lg-5 mx-lg-5 px-lg-5">
+              <img
+                src={imgy}
+                className="ms-lg-5 ps-lg-5  position-absolute end-25 start-50 mt-lg-5 pt-lg-5 top-0"
+              />
+            </div>
           </Col>
-          <Col md={6} xs={8} lg={6} className="mt-5  pt-lg-5 mx-lg-5 px-md-5">
+          <Col md={8} xs={8} lg={6} className="mt-5  pt-lg-5 mx-lg-5 px-md-5">
             <Card
               className="p-3 pt-4 pb-4 rounded-4 mx-lg-5 "
               style={{
@@ -77,7 +88,7 @@ const Bookform = () => {
                   "0 4.424776077270508px 6.210212707519531px 0 rgba(0, 0, 0, 0.0283)",
               }}
             >
-              <h5 className="mt-2 fw-bold">Book Now</h5>
+              <h5 className="mt-2 fs-3 fw-bold">Book Now</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <Row className="mb-4 ">
                 <Form
@@ -133,6 +144,7 @@ const Bookform = () => {
                   {/* Input field with increment and decrement buttons */}
                   <Row>
                     <Form.Group className="mb-3" as={Col} md={6}>
+                      <Form.Label className="formlabel">STAR</Form.Label>
                       <InputGroup className="mb-3">
                         <Button
                           required
@@ -145,7 +157,7 @@ const Bookform = () => {
                         <Form.Control
                           required
                           type="text"
-                          value={`Value: ${formData.IncrementDecrementValue}`}
+                          value={` ${formData.IncrementDecrementValue}`}
                           readOnly
                           className="text-center"
                         />
@@ -160,6 +172,7 @@ const Bookform = () => {
                       </InputGroup>
                     </Form.Group>
                     <Form.Group className="mb-3" as={Col} md={6}>
+                      <Form.Label className="formlabel">ROOM</Form.Label>
                       <InputGroup className="mb-3">
                         <Button
                           className="incbtn  fw-bold fs-4"
@@ -170,7 +183,7 @@ const Bookform = () => {
                         </Button>
                         <Form.Control
                           type="text"
-                          value={`Value: ${formData.IncrementDecrementValue2}`}
+                          value={` ${formData.IncrementDecrementValue2}`}
                           readOnly
                           className="text-center"
                         />

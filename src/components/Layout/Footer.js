@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="text-black footercls text-center py-4">
+    <footer className="text-black footercls fs-6 text-center py-4">
       <Navbar className="justify-content-center ">
         <Nav className="text-black">
           <Nav.Link href="/privacy-policy">Privacy Policy</Nav.Link>
@@ -25,7 +25,7 @@ const Footer = () => {
           <Nav.Link href="/joins" className="fw-bold">
             Joins
           </Nav.Link>
-          <p className="mt-lg-1 text-black">|</p>
+          <p className="mt-1 text-black">|</p>
         </Nav>
       </Navbar>
     </footer>

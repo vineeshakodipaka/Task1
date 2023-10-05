@@ -82,7 +82,7 @@ const Section3 = () => {
       {
         breakpoint: 992, // Large screens
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         },
       },
       {
@@ -107,7 +107,7 @@ const Section3 = () => {
   return (
     <div className="px-lg-5 slide-container px-lg-5 pt-4 pb-4 ">
       <div>
-        <Row className="pt-4 mx-lg-5 mx-md-4">
+        <Row className="pt-4 mx-md-5 mx-md-4">
           <h4 className="pt-3 pb-4 m-3">Our Destinations</h4>
           {/* Slider component */}
 
@@ -122,13 +122,13 @@ const Section3 = () => {
                   }}
                 >
                   <Card.Img variant="top" src={item.images} />
-                  <Card.Text className="fw-bold px-2 fs-6 pb-2 pt-2">
+                  <Card.Text className="fs-6 mt-4 fw-bold px-2  pb-2 pt-2">
                     {item.content1}
                   </Card.Text>
                   <Row className="justify-content-between">
                     <Col xs={9}>
-                      <Card.Text className="px-2">
-                        <h6>{item.content2}</h6>
+                      <Card.Text className="px-2 fs-6">
+                        {item.content2}
                       </Card.Text>
                     </Col>
                     <Col xs={3}>

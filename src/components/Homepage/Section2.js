@@ -8,25 +8,25 @@ const Section2 = () => {
     {
       imgages: img1,
       text: "Jenny Wilson1",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing...",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
       imgages: img2,
       text: "Jenny Wilson2",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing...1212",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
     {
       imgages: img3,
       text: "Jenny Wilson3",
-      para: "Lorem ipsum dolor sit amet, consectetur adipiscing...4545444",
+      para: "Lorem ipsum dolor sit amet, consectetur adipiscing",
     },
   ]);
 
   return (
-    <div className="pt-2 section2cls">
+    <div className="pt-2 section2cls pt-md-5 mt-md-4">
       <div>
-        <Row className="justify-content-around px-lg-5 mx-lg-5 pt-5 mt-5">
-          <Col md={5} lg={5}>
+        <Row className="justify-content-around px-md-5 mx-md-5 pt-5 mt-5 col-xs-1">
+          <Col xs={12} lg={5} md={12}>
             {data.map((item, index) => (
               <Card
                 className="pt-3 pb-3 mb-3 p-md-2 rounded-4"
@@ -37,25 +37,28 @@ const Section2 = () => {
                     "0 3.1255478858947754px 5.925629615783691px 0 rgba(0,0,0,0.0364)",
                 }}
               >
-                <Row className="pt-3 pb-3">
-                  <Col lg={3} xs={3}>
+                <Row className="pt-3 pb-3 ">
+                  <Col lg={3} xs={12} className="fs-5">
                     <Card.Img
                       className="px-3"
                       src={item.imgages}
                       style={{ width: "100px" }}
                     />
                   </Col>
-                  <Col lg={6} xs={6}>
+                  <Col lg={6} xs={12}>
                     <Card.Text className="fw-bold">{item.text}</Card.Text>
-                    <Card.Text>
-                      <h6>{item.para}</h6>
-                    </Card.Text>
+                    <Card.Text>{item.para}</Card.Text>
                   </Col>
                 </Row>
               </Card>
             ))}
           </Col>
-          <Col md={5} lg={4} className="section2clstexts mt-5 pt-md-1 pt-5">
+          <Col
+            lg={4}
+            xs={12}
+            md={12}
+            className="section2clstexts mt-5 pt-md-4 pt-5"
+          >
             <h1>Tropical Adventure </h1>
             <p className="fs-2">for Students.</p>
             <p className="fw-bold">
