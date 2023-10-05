@@ -83,20 +83,4 @@ font-family: 'Inter';
             font-size: 80px;
           }
 }
- @media (max-width: 768px) {
-.section4cls .studentrow {
-   font-size: 22px;
-  }
 
-  .section4cls .Testiminalsrow,
-  .section4cls .studentrow {
-    font-size: 22px;
-  }
-
-  /* bookformcls */
-
-  .bookformcls {
-    font-size: 18px;
-  }
-  
- }

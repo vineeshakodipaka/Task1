@@ -58,7 +58,7 @@ const Bookform = () => {
   return (
     <div className="bookformcls">
       <div>
-        <Row className="px-lg-5 px-md-5 mx-lg-5 justify-content-around mx-md-2 pb-4">
+        <Row className="px-lg-5 px-md-5 mx-lg-5 lg:text-base md:text-2xl justify-content-around mx-md-2 pb-4">
           <Col
             md={8}
             lg={4}
@@ -88,15 +88,17 @@ const Bookform = () => {
                   "0 4.424776077270508px 6.210212707519531px 0 rgba(0, 0, 0, 0.0283)",
               }}
             >
-              <h5 className="mt-2 fs-3 fw-bold">Book Now</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <h5 className="mt-2 fs-3 fw-bold mb-3">Book Now</h5>
+              <p className="mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
               <Row className="mb-4 ">
                 <Form
                   className="mt-2 fw-bold bg-white "
                   onSubmit={handleFormSubmit}
                 >
-                  <Form.Group className="mb-3" as={Col} md={12}>
-                    <Form.Label className="formlabel">CITY</Form.Label>
+                  <Form.Group className="mb-4" as={Col} md={12}>
+                    <Form.Label className="formlabel " >CITY</Form.Label>
                     <InputGroup className="rounded-5">
                       <Form.Control
                         required
@@ -110,7 +112,7 @@ const Bookform = () => {
                   </Form.Group>
                   <Row>
                     <Form.Group
-                      className="mb-3 position-relative"
+                      className="mb-4 position-relative"
                       as={Col}
                       md={6}
                     >
@@ -126,7 +128,7 @@ const Bookform = () => {
                         />
                       </InputGroup>
                     </Form.Group>
-                    <Form.Group className="mb-3" as={Col} md={6}>
+                    <Form.Group className="mb-4" as={Col} md={6}>
                       <Form.Label className="formlabel">Departure</Form.Label>
                       <InputGroup className="rounded-5">
                         <Form.Control
@@ -199,7 +201,7 @@ const Bookform = () => {
                   </Row>
 
                   <Button
-                    className="rounded-4 p-3"
+                    className="rounded-4 p-3 lg:text-base md:text-2xl"
                     style={{
                       background: "black",
                       color: "white",

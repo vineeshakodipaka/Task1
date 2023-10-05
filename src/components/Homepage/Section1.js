@@ -9,13 +9,15 @@ const Section1 = () => {
         <Row
           xs={1}
           md={2}
-          className="justify-content-around  px-lg-5 mx-lg-3 px-md-4 pt-3 pb-3 pb-lg-5"
+          className="justify-content-around  lg:text-base md:text-2xl  px-lg-5 mx-lg-3 px-md-4 pt-3 pb-3 pb-lg-5"
         >
-          <Col md={5} lg={6} xs={8} className="mt-md-5 pt-3 pt-md-5 ">
-            <p className="fw-bold fs-4">Discover the beauty of the tropics</p>
-            <h1 className="fw-bold mt-lg-2">Tropical</h1>
-            <h1 className="fw-bold">Destinations</h1>
-            <h2>For Student</h2>
+          <Col md={5} lg={6} xs={8} className=" mt-md-5 pt-3 pt-md-5 ">
+            <div className="md:leading-loose">
+              <p className="fw-bold ">Discover the beauty of the tropics</p>
+              <h1 className="fw-bold mt-lg-2 ">Tropical</h1>
+              <h1 className="fw-bold mt-2 mb-2">Destinations</h1>
+              <h2>For Student</h2>
+            </div>
             {/* <p>
               <span className="fs-1 fw-bold">Tropical Destinations</span>
               <span className="fs-2 fw-bolder"> For Student</span>

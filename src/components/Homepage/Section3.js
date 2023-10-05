@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import "./Section3.css";
+import { BsFillStarFill } from "react-icons/bs";
 const Section3 = () => {
   const [data] = useState([
     {
@@ -62,6 +63,8 @@ const Section3 = () => {
     },
   ]);
 
+  const [activeButton, setActiveButton] = useState(0); // State to track active button
+
   // Ref for slider
   const sliderRef = React.useRef(null);
 
@@ -105,31 +108,62 @@ const Section3 = () => {
   };
 
   return (
-    <div className="px-lg-5 slide-container px-lg-5 pt-4 pb-4 ">
+    <div className="slide-container  pt-4 pb-4  lg:text-base md:text-2xl">
       <div>
-        <Row className="pt-4 mx-md-5 mx-md-4">
-          <h4 className="pt-3 pb-4 m-3">Our Destinations</h4>
+        <Row className="pt-4 mx-md-5 mx-md-4 px-md-5">
+          <h4 className="pt-3 pb-4 m-3 fw-bold">Our Destinations</h4>
           {/* Slider component */}
 
           <Slider {...settings} ref={sliderRef}>
             {data.map((item, index) => (
-              <Col className="gap-3">
+              <Col>
                 <Card
-                  className="rounded-4 m-3 pb-3"
+                  className="rounded-4 m-2 pb-3 position-relative"
                   key={index}
                   style={{
                     border: "none",
                   }}
                 >
-                  <Card.Img variant="top" src={item.images} />
-                  <Card.Text className="fs-6 mt-4 fw-bold px-2  pb-2 pt-2">
+                  <Card.Img variant="top" src={item.images} width="100%" />
+                  <Row className="justify-content-between position-absolute bottom-40 ">
+                    <Col
+                      md={1}
+                      lg={6}
+                      className="lg:text-base md:text-2xl lg:px-0 md:px-5"
+                    >
+                      <Button
+                        className="px-3  lg:px-1 pt-2 pb-2 rounded-pill md:mx-8 lg:mx-5 lg:text-base md:text-2xl"
+                        style={{
+                          border: "none",
+                          background: "#FFFFFF",
+                          color: "black",
+                        }}
+                      >
+                        <span className="d-flex">
+                          4.8
+                          <BsFillStarFill style={{ color: "yellow" }} />
+                        </span>
+                      </Button>
+                    </Col>
+                    <Col md={1} lg={4}>
+                      <Button
+                        className="px-4  lg:px-1 pt-2 pb-2 rounded-pill md:mx-16  lg:mx-5  lg:text-base md:text-2xl"
+                        style={{
+                          border: "none",
+                          background: "#000000",
+                          color: "white",
+                        }}
+                      >
+                        Explore
+                      </Button>
+                    </Col>
+                  </Row>
+                  <Card.Text className=" mt-4 fw-bold px-2   pb-2 pt-2">
                     {item.content1}
                   </Card.Text>
                   <Row className="justify-content-between">
                     <Col xs={9}>
-                      <Card.Text className="px-2 fs-6">
-                        {item.content2}
-                      </Card.Text>
+                      <Card.Text className="px-2">{item.content2}</Card.Text>
                     </Col>
                     <Col xs={3}>
                       <Card.Img src={menu} style={{ width: "40px" }} />
@@ -140,12 +174,24 @@ const Section3 = () => {
             ))}
           </Slider>
           {/* Buttons to navigate the slider */}
-          <div className="slide-btns mb-3 px-lg-5 px-md-5 justify-content-center mt-2 pb-2">
-            <Button className="slide-btn" id="slide-btn" onClick={slidePrev}>
-              <FiArrowLeft />
+          <div className="slide-btns mb-3 px-lg-5 px-md-5 justify-content-center mt-5 pb-2">
+            <Button
+              id="slide-btn"
+              onClick={slidePrev}
+              className={`slide-btn   ${activeButton === 1 ? "active" : ""}`}
+              onMouseEnter={() => setActiveButton(1)}
+            >
+              <FiArrowLeft className="icon" />{" "}
+              {/* Add class "icon" to the icon */}
             </Button>
-            <Button className="slide-btn" id="slide-btn" onClick={slideNext}>
-              <FiArrowRight />
+            <Button
+              className={`slide-btn  ${activeButton === 1 ? "active" : ""}`}
+              onMouseEnter={() => setActiveButton(1)}
+              id="slide-btn"
+              onClick={slideNext}
+            >
+              <FiArrowRight className="icon" />{" "}
+              {/* Add class "icon" to the icon */}
             </Button>
           </div>
         </Row>

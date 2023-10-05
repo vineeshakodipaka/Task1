@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import img1 from "../../Images/avatar.png";
 import img2 from "../../Images/avatar (1).png";
 import img3 from "../../Images/avatar (2).png";
+
 import { Button, Card, Col, div, Row } from "react-bootstrap";
 const Section2 = () => {
   const [data, setData] = useState([
@@ -29,7 +30,7 @@ const Section2 = () => {
           <Col xs={12} lg={5} md={12}>
             {data.map((item, index) => (
               <Card
-                className="pt-3 pb-3 mb-3 p-md-2 rounded-4"
+                className="pt-3 pb-3 mb-3 p-md-2 rounded-4  lg:text-base md:text-2xl md:leading-loose"
                 key={index}
                 style={{
                   border: "none",
@@ -45,6 +46,7 @@ const Section2 = () => {
                       style={{ width: "100px" }}
                     />
                   </Col>
+
                   <Col lg={6} xs={12}>
                     <Card.Text className="fw-bold">{item.text}</Card.Text>
                     <Card.Text>{item.para}</Card.Text>
@@ -57,10 +59,10 @@ const Section2 = () => {
             lg={4}
             xs={12}
             md={12}
-            className="section2clstexts mt-5 pt-md-4 pt-5"
+            className="section2clstexts mt-5 pt-md-4 pt-5  lg:text-base md:text-2xl md:leading-loose"
           >
-            <h1>Tropical Adventure </h1>
-            <p className="fs-2">for Students.</p>
+            <h1 className="fw-bold">Tropical Adventure </h1>
+            <p>for Students.</p>
             <p className="fw-bold">
               Student Tropical Vacation: Relax and Recharge
             </p>

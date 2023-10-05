@@ -38,15 +38,15 @@ const Section4 = () => {
             md={10}
             lg={6}
             xs={5}
-            className="mt-5 pt-5 mx-lg-0 mx-md-5 mx-lg-0 px-lg-0  px-md-3"
+            className="mt-5 pt-5 mx-lg-0 mx-md-5 mx-lg-0 px-lg-0 pb-3  px-md-3 lg:text-base md:text-2xl"
           >
-            <p className="fw-bold">Get 20% off for student</p>
-            <h3>Student discounts available.</h3>
-            <p className="fs-3">Get ready for some fun in the sun!</p>
-            <p className="fw-bold">
+            <p className="fw-bold pb-3  ">Get 20% off for student</p>
+            <h3 className="fw-bold pb-3  ">Student discounts available.</h3>
+            <p className="fs-3 pb-3  ">Get ready for some fun in the sun!</p>
+            <p className="fw-bold pb-3  ">
               Student Tropical Vacation: Relax and Recharge
             </p>
-            <ul>
+            <ul class="list-disc lg:mx-1 md:mx-5">
               <li>Lorem ipsum dolor sit amet </li>
               <li> Massa quis natoque sit quam </li>
               <li> Eros non pellentesque elit </li>
@@ -71,19 +71,25 @@ const Section4 = () => {
         <Bookform />
         {/* Testiminals row */}
         <Row className="Testiminalsrow  pt-4 px-md-5 pb-4 mx-md-4 mx-lg-5 px-lg-4">
-          <h3 className="text-center mb-4 pt-4 pb-3">Testiminals</h3>
+          <p className="text-center mb-4 pt-4 pb-3 lg:text-4xl md:text-4xl">
+            Testiminals
+          </p>
           <Row className="px-lg-5 justify-content-center" lg={3} md={1}>
             {data.map((dta, ind) => {
               return (
                 <>
-                  <Col md={8}>
+                  <Col md={8} className="mb-5">
                     <div key={dta.id} className="text-center">
-                      <img src={dta.images} width="100px" />
-                      <h6 className="pt-2 pb-2 ">{dta.content1}</h6>
-                      <div className="mx-5 px-5">
+                      <center>
+                        <img src={dta.images} width="100px" />
+                      </center>
+                      <h6 className="pt-2 pb-2 lg:text-base fw-bold md:text-2xl">
+                        {dta.content1}
+                      </h6>
+                      <div className="mx-5 px-5 mb-3">
                         <hr />
                       </div>
-                      <p >{dta.content2}</p>
+                      <p className="lg:text-base md:text-2xl">{dta.content2}</p>
                     </div>
                   </Col>
                 </>
@@ -93,9 +99,11 @@ const Section4 = () => {
         </Row>
         {/*Row: Student Special: */}
         <Row className="studentrow text-center justify-content-center mt-lg-5  pt-lg-5 mt-3 pb-3">
-          <Col lg={5} xs={8} className="px-lg-4 mt-4">
-            <h3>Student Special: Discounted rates on tropical getaways!</h3>
-            <p className="mt-4 ">
+          <Col lg={5} xs={8} className="px-lg-4 lg:px-4 mt-4">
+            <h3 className="lg:text-base md:text-2xl md:px-4 ">
+              Student Special: Discounted rates on tropical getaways!
+            </h3>
+            <p className="mt-4 lg:text-base md:text-2xl">
               Let's embody your beautiful ideas together, simplify the way you
               visualize your next big things.
             </p>

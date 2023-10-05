@@ -37,3 +37,10 @@
         position: relative;
     }
 }
+
+/* Style for the active link */
+.slide-container .slide-btn .icon.active {
+   
+    color: red !important;
+    /* Text color for the active link */
+}
