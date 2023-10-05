@@ -1,0 +1,39 @@
+/* slider */
+@media (min-width: 992px) {
+
+    /* Styling for elements with class .slide-btns #slide-btn */
+    .slide-btns #slide-btn {
+        visibility: visible !important;
+    }
+}
+
+/* Styling for elements with class .slick-prev and .slick-next */
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+/* Styling for elements with class .slide-btns #slide-btn */
+.slide-btns #slide-btn {
+    border: none !important;
+    color: #000000 !important;
+  
+    background: none !important;
+   
+}
+
+/* Styling for elements with class .slide-btns */
+.slide-btns {
+    display: flex !important;
+}
+
+/* Media query for devices with minimum width of 1025px */
+@media (min-width:1025px) {
+
+    /* Styling for elements with class .slide-container */
+    .slide-container {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+    }
+}

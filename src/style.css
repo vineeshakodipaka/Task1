@@ -1,16 +1,58 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Comfortaa&family=Poppins&family=Inter&family=Roboto&display=swap');
+body{
+  background-color:rgb(242, 242, 242)  !important;
 }
 
-body {
-  margin: 0;
-  padding: 1rem;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
-}
+ .App{
+  overflow: hidden;
+ }
 
-h1 {
-  font-weight: 800;
-  font-size: 1.5rem;
+ /* navbar */
+ .navbarcls .nav-link,.navbarcls .btn{
+  font-family: 'Inter' !important;
+ }
+ /* section1cls */
+    .section1cls h1,.section1cls h2{
+   font-size: 'Inter';
+    }
+  .section1cls p,.section1cls .btn{
+   font-size: 'Poppins';
+    }
+
+/* section2cls */
+.section2cls .card{
+  font-family: 'Roboto';
+}
+.section2cls .card {
+  font-family: 'Roboto';
+}
+.section2cls .section2clstexts {
+  font-family: 'Inter';
+}
+/* slide-container */
+.slide-container h4{
+font-family: 'Inter';
+}
+.slide-container .card {
+  font-family: 'Roboto';
+}
+.section4cls .section4clsrow1{
+  font-family: 'Inter';
+}
+.section4cls .Testiminalsrow,.section4cls .studentrow {
+  font-family: 'Inter';
+}
+.bookformcls{
+  font-family: 'Roboto';
+}
+.footercls{
+  font-family: 'Inter';
+}
+/* section2cls */
+ @media (min-width: 992px) {
+    
+          .section1cls h1,
+          .section1cls h2 {
+            font-size: 80px;
+          }
 }

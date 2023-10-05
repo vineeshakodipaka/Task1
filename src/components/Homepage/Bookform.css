@@ -1,0 +1,14 @@
+.bookformcls input{
+    background: #F3F3F3;
+}
+.bookformcls .decbtn ,.bookformcls .incbtn {
+    background: #EBEBEB !important;
+    border: none;
+    font-weight: 700 !important;
+   color: black;
+}
+.bookformcls .decbtn:active,
+.bookformcls .incbtn:active {
+   
+    color: black !important;
+}
