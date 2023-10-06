@@ -5,9 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Header() {
   return (
-    <Navbar expand="lg" className="navbarcls pt-5 pb-5 pt-lg-3 pb-lg-3 px-4 mx-5  ">
+    <Navbar
+      expand="lg"
+      className="navbarcls pt-5 pb-5 pt-lg-3 pb-lg-3 px-4 mx-5  "
+    >
       <Navbar.Brand className="d-lg-none fw-bold text-2xl" href="#home">
-        <img src="https://skyfinity.co.in/storage/Logo_Settings/Skyfinity-Logo.svg" />
+        <p className="md:text:4xl">Header</p>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav " />
       <Navbar.Collapse id="responsive-navbar-nav ">
